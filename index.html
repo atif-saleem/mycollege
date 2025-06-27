@@ -4,24 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Index - College Bootstrap Template</title>
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="main-style.css" />
+
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Bootstrap Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <!-- ✅ Swiper CSS (Only one, versioned) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <div id="loader" class="loader-wrapper">
+      <span class="loader"></span>
+    </div>
     <header class="sticky-top">
       <div class="container-fluid header-container container-xl">
         <nav class="navbar navbar-expand-lg">
@@ -106,7 +127,7 @@
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li><a class="dropdown-item" href="#">News </a></li>
-                  <li><a class="dropdown-item" href="#"> </a></li>
+                  <li><a class="dropdown-item" href="#">Event Details </a></li>
                   <li><a class="dropdown-item" href="#">Privace</a></li>
                   <li><a class="dropdown-item" href="#">Term of Service</a></li>
                   <li><a class="dropdown-item" href="#">Error 404</a></li>
@@ -160,7 +181,7 @@
     >
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 clr">
+          <div class="col-md-6 clr hide-animation">
             <h1 class="hero-h1">Inspiring Excellence Through Education</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -186,7 +207,7 @@
               <a href="#" class="btn btn-light">Virtual Tour</a>
             </div>
           </div>
-          <div class="col-md-6 img clr" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-md-6 img hide-animation">
             <img src="images/hero-img.png" alt="" />
             <div class="image-bottom">
               <i
@@ -200,9 +221,9 @@
       </div>
     </div>
     <div class="container">
-      <div class="row gy-4">
+      <div class="row gy-4 f-card">
         <div class="col-lg-4">
-          <div class="feature-card">
+          <div class="feature-card hide-animation">
             <div class="icon">
               <i class="bi bi-book-fill"></i>
             </div>
@@ -216,7 +237,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="feature-card border">
+          <div class="feature-card border hide-animation">
             <div class="icon icon2">
               <i class="bi bi-laptop-fill"></i>
             </div>
@@ -230,7 +251,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="feature-card">
+          <div class="feature-card hide-animation">
             <div class="icon">
               <i class="bi bi-people-fill"></i>
             </div>
@@ -245,7 +266,7 @@
         </div>
       </div>
     </div>
-    <div class="events">
+    <div class="events hide-animation">
       <div class="container">
         <div class="events-content">
           <div class="event-date">
@@ -270,7 +291,7 @@
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <div class="about-content">
+            <div class="about-content hide-animation">
               <h3>Our Story</h3>
               <h2>Educating Minds, Inspiring Hearts</h2>
               <p>
@@ -326,10 +347,10 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="about-img">
+            <div class="about-img hide-animation">
               <img src="images/about-college.png" alt="Education" />
             </div>
-            <div class="missions">
+            <div class="missions hide-animation">
               <div class="mission-card">
                 <h3>Our Mission</h3>
                 <p>
@@ -351,7 +372,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-md-12">
-            <div class="core-value">
+            <div class="core-value hide-animation">
               <h3 class="mb-4 text-center">Core Values</h3>
               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div class="col">
@@ -409,7 +430,7 @@
       </div>
     </section>
     <section id="feature-program" class="section feature-program">
-      <div class="container title">
+      <div class="container title hide-animation">
         <h2>Featured Programs</h2>
         <p>
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -418,7 +439,7 @@
       </div>
       <div class="container feature-content">
         <div class="row gy-5">
-          <div class="col-md-6 brd-programing">
+          <div class="col-md-6 brd-programing hide-animation">
             <div class="banner-img">
               <img src="images/bnr-img.png?v=212" alt="banners" />
               <div class="badge">
@@ -456,8 +477,8 @@
           </div>
           <div class="col-md-6">
             <div class="right-content">
-              <div class="row g-3">
-                <div class="col-md-12 mrg">
+              <div class="row g-3 cardd">
+                <div class="col-md-12 mrg showme hide-animation">
                   <div class="prg-item">
                     <div class="prg-icon">
                       <img src="images/bs-img.png" alt="" />
@@ -478,7 +499,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 showme hide-animation">
                   <div class="prg-item">
                     <div class="prg-icon">
                       <img src="images/mr-img.png" alt="" />
@@ -499,7 +520,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 showme hide-animation">
                   <div class="prg-item">
                     <div class="prg-icon">
                       <img src="images/health.png" alt="" />
@@ -520,7 +541,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 showme hide-animation">
                   <div class="prg-item">
                     <div class="prg-icon">
                       <img src="images/degree.png" alt="" />
@@ -548,7 +569,7 @@
       </div>
     </section>
     <section id="feature-program" class="section feature-program">
-      <div class="container title">
+      <div class="container title hide-animation">
         <h2>Students Life</h2>
         <p>
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -556,9 +577,9 @@
         </p>
       </div>
       <div class="container">
-        <div class="row align-items-center g-5 mb-5">
+        <div class="row align-items-center g-md-5 mb-5">
           <div class="col-lg-5">
-            <div class="img-st">
+            <div class="img-st hide-animation">
               <img src="images/students-7.png" alt="" />
               <div class="floatin-card">
                 <div class="card-icon">
@@ -573,18 +594,18 @@
           </div>
           <div class="col-lg-7">
             <div class="content-right">
-              <div class="badge-st">
+              <div class="badge-st hide-animation">
                 <span>Student Life</span>
               </div>
-              <h2>
+              <h2 class="hide-animation">
                 Vivamus consequat lorem at nisl laoreet commodo a ac lectus
               </h2>
-              <p>
+              <p class="hide-animation">
                 Pellentesque habitant morbi tristique senectus et netus et
                 malesuada fames ac turpis egestas. Vestibulum tortor quam,
                 feugiat vitae.
               </p>
-              <div class="info-st">
+              <div class="info-st hide-animation">
                 <div class="info-item">
                   <div class="info-icon">
                     <i class="bi bi-calendar-event"></i>
@@ -605,7 +626,7 @@
                   </div>
                 </div>
               </div>
-              <div class="st-btn">
+              <div class="st-btn hide-animation">
                 <a href="#" class="btn-primary">Discover More</a>
                 <a href="#" class="btn-tour"
                   ><i class="bi bi-play-circle"></i
@@ -615,10 +636,10 @@
             </div>
           </div>
         </div>
-        <div class="row g-4">
+        <div class="row g-md-4">
           <div class="col-lg-8">
             <div class="st-activity">
-              <div class="activity-img">
+              <div class="activity-img hide-animation">
                 <img src="images/activities-2.png" alt="" />
                 <div class="st-overlay">
                   <div class="overlay-content">
@@ -635,7 +656,7 @@
           </div>
           <div class="col-lg-4">
             <div class="st-list">
-              <div class="st-activitys">
+              <div class="st-activitys hide-animation">
                 <div class="activity-logo">
                   <img src="images/activities-6.png" alt="student-pic" />
                 </div>
@@ -644,7 +665,7 @@
                   <p>Sed ut perspiciatis unde omnis natus error</p>
                 </div>
               </div>
-              <div class="st-activitys">
+              <div class="st-activitys hide-animation">
                 <div class="activity-logo">
                   <img src="images/activities-1.png" alt="student-pic" />
                 </div>
@@ -653,7 +674,7 @@
                   <p>At vero eos et accusamus et iusto odio</p>
                 </div>
               </div>
-              <div class="st-activitys">
+              <div class="st-activitys hide-animation">
                 <div class="activity-logo">
                   <img src="images/activities-4.png" alt="student-pic" />
                 </div>
@@ -668,158 +689,201 @@
       </div>
     </section>
     <section id="feature-program" class="section feature-program">
-      <div class="container title">
+      <div class="container title hide-animation">
         <h2>Testimonials</h2>
         <p>
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
           consectetur velit
         </p>
       </div>
+
       <div class="container">
-        <div class="row testi-cards">
-          <div class="col-md-4">
-            <div class="testi-wraper">
-              <div class="person-wraper">
-                <div class="logo-testi">
-                  <img src="images/person-m-8.png" alt="" />
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testi-wraper">
+                <div class="person-wraper">
+                  <div class="logo-testi">
+                    <img src="images/person-m-8.png" alt="" />
+                  </div>
+                  <div class="star-rating" data-fill="4">
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                 
+                  </div>
                 </div>
-                <div class="star-rating">★★★★★</div>
-              </div>
-              <div class="comment">
-                <p>
-                  <i>
-                    " At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi.
-                    <span class="testi-span">"<span></span></span
-                  ></i>
-                </p>
-              </div>
-              <div class="name">
-                <h4>Rachel Chen</h4>
-                <p>Project Manger</p>
-              </div>
-              <div class="icon-testi">
-                <i class="bi bi-chat-quote-fill"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testi-wraper">
-              <div class="person-wraper">
-                <div class="logo-testi">
-                  <img src="images/person-m-8.png" alt="" />
+                <div class="comment">
+                  <p>
+                    <i>
+                      " At vero eos et accusamus et iusto odio dignissimos
+                      ducimus qui blanditiis praesentium voluptatum deleniti
+                      atque corrupti quos dolores et quas molestias excepturi.
+                      <span class="testi-span">"<span></span></span>
+                    </i>
+                  </p>
                 </div>
-                <div class="star-rating">★★★★★</div>
-              </div>
-              <div class="comment">
-                <p>
-                  <i>
-                    " At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi.
-                    <span class="testi-span">"<span></span></span
-                  ></i>
-                </p>
-              </div>
-              <div class="name">
-                <h4>Rachel Chen</h4>
-                <p>Project Manger</p>
-              </div>
-              <div class="icon-testi">
-                <i class="bi bi-chat-quote-fill"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testi-wraper">
-              <div class="person-wraper">
-                <div class="logo-testi">
-                  <img src="images/person-m-8.png" alt="" />
+                <div class="name">
+                  <h4>Rachel Chen</h4>
+                  <p>Project Manager</p>
                 </div>
-                <div class="star-rating">★★★★★</div>
-              </div>
-              <div class="comment">
-                <p>
-                  <i>
-                    " At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi.
-                    <span class="testi-span">"<span></span></span
-                  ></i>
-                </p>
-              </div>
-              <div class="name">
-                <h4>Rachel Chen</h4>
-                <p>Project Manger</p>
-              </div>
-              <div class="icon-testi">
-                <i class="bi bi-chat-quote-fill"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testi-wraper">
-              <div class="person-wraper">
-                <div class="logo-testi">
-                  <img src="images/person-m-8.png" alt="" />
+                <div class="icon-testi">
+                  <i class="bi bi-chat-quote-fill"></i>
                 </div>
-                <div class="star-rating">★★★★★</div>
-              </div>
-              <div class="comment">
-                <p>
-                  <i>
-                    " At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi.
-                    <span class="testi-span">"<span></span></span
-                  ></i>
-                </p>
-              </div>
-              <div class="name">
-                <h4>Rachel Chen</h4>
-                <p>Project Manger</p>
-              </div>
-              <div class="icon-testi">
-                <i class="bi bi-chat-quote-fill"></i>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testi-wraper">
-              <div class="person-wraper">
-                <div class="logo-testi">
-                  <img src="images/person-m-8.png" alt="" />
+
+            <div class="swiper-slide">
+              <div class="testi-wraper">
+                <div class="person-wraper">
+                  <div class="logo-testi">
+                    <img src="images/person-m-8.png" alt="" />
+                  </div>
+                 <div class="star-rating" data-fill="3">
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                 
+                  </div>
                 </div>
-                <div class="star-rating">★★★★★</div>
+                <div class="comment">
+                  <p>
+                    <i>
+                      " Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem.
+                      <span class="testi-span">"<span></span></span>
+                    </i>
+                  </p>
+                </div>
+                <div class="name">
+                  <h4>Rachel Chen</h4>
+                  <p>Project Manager</p>
+                </div>
+                <div class="icon-testi">
+                  <i class="bi bi-chat-quote-fill"></i>
+                </div>
               </div>
-              <div class="comment">
-                <p>
-                  <i>
-                    " At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi.
-                    <span class="testi-span">"<span></span></span
-                  ></i>
-                </p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testi-wraper">
+                <div class="person-wraper">
+                  <div class="logo-testi">
+                    <img src="images/person-f-12.webp" alt="" />
+                  </div>
+                  <div class="star-rating" data-fill="1">
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                 
+                  </div>
+                </div>
+                <div class="comment">
+                  <p>
+                    <i>
+                      " At vero eos et accusamus et iusto odio dignissimos
+                      ducimus qui blanditiis praesentium voluptatum deleniti
+                      atque corrupti quos dolores et quas molestias excepturi.
+                      <span class="testi-span">"<span></span></span>
+                    </i>
+                  </p>
+                </div>
+                <div class="name">
+                  <h4>Rachel Chen</h4>
+                  <p>Project Manager</p>
+                </div>
+                <div class="icon-testi">
+                  <i class="bi bi-chat-quote-fill"></i>
+                </div>
               </div>
-              <div class="name">
-                <h4>Rachel Chen</h4>
-                <p>Project Manger</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="testi-wraper">
+                <div class="person-wraper">
+                  <div class="logo-testi">
+                    <img
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww"
+                      alt=""
+                    />
+                  </div>
+                  <div class="star-rating" data-fill="4.6">
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                 
+                  </div>
+                </div>
+                <div class="comment">
+                  <p>
+                    <i>
+                      " At vero eos et accusamus et iusto odio dignissimos
+                      ducimus qui blanditiis praesentium voluptatum deleniti
+                      atque corrupti quos dolores et quas molestias excepturi.
+                      <span class="testi-span">"<span></span></span>
+                    </i>
+                  </p>
+                </div>
+                <div class="name">
+                  <h4>Rachel Chen</h4>
+                  <p>Project Manager</p>
+                </div>
+                <div class="icon-testi">
+                  <i class="bi bi-chat-quote-fill"></i>
+                </div>
               </div>
-              <div class="icon-testi">
-                <i class="bi bi-chat-quote-fill"></i>
+            </div>
+            <div class="swiper-slide">
+              <div class="testi-wraper">
+                <div class="person-wraper">
+                  <div class="logo-testi">
+                    <img
+                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt=""
+                    />
+                  </div>
+                <div class="star-rating" data-fill="5">
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                   <span class="star"> <i class="bi bi-star-fill"></i></span>
+                 
+                  </div>
+                </div>
+                <div class="comment">
+                  <p>
+                    <i>
+                      " At vero eos et accusamus et iusto odio dignissimos
+                      ducimus qui blanditiis praesentium voluptatum deleniti
+                      atque corrupti quos dolores et quas molestias excepturi.
+                      <span class="testi-span">"<span></span></span>
+                    </i>
+                  </p>
+                </div>
+                <div class="name">
+                  <h4>Rachel Chen</h4>
+                  <p>Project Manager</p>
+                </div>
+                <div class="icon-testi">
+                  <i class="bi bi-chat-quote-fill"></i>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="swiper-btn">
-              <div class="arrow-left">&lt;</div>
-              <div class="arrow-right">&gt;</div>
-            </div>
+          <div class="swiper-btn-wrapper">
+            <div class="arrow-left"><i class="bi bi-chevron-left"></i></div>
+            <div class="arrow-right"><i class="bi bi-chevron-right"></i></div>
           </div>
+
+          <!-- Navigation arrows -->
         </div>
       </div>
     </section>
@@ -844,7 +908,7 @@
                 <div class="matric-icon-wraper">
                   <i class="bi bi-mortarboard-fill"></i>
                 </div>
-                <div class="matric-value"><span>87</span>%</div>
+                <div class="matric-value"><span id="counter">0</span>%</div>
               </div>
               <div class="matric-content">
                 <h4>Success Rate</h4>
@@ -874,7 +938,7 @@
                 <div class="matric-icon-wraper">
                   <i class="bi bi-trophy-fill"></i>
                 </div>
-                <div class="matric-value"><span>250</span>+</div>
+                <div class="matric-value"><span id="awards">0</span>+</div>
               </div>
               <div class="matric-content">
                 <h4>Awards Received</h4>
@@ -888,7 +952,7 @@
                 <div class="matric-icon-wraper">
                   <i class="bi bi-globe"></i>
                 </div>
-                <div class="matric-value"><span>87</span>%</div>
+                <div class="matric-value"><span id="country">0</span>%</div>
               </div>
               <div class="matric-content">
                 <h4>Countries Represented</h4>
@@ -942,13 +1006,13 @@
                         </div>
                       </div>
                       <div class="gallery-item">
-                        <img src="images/campus-3.png" alt="" />
+                        <img src="images/students-5.png " alt="" />
                         <div class="gallery-overlay">
                           <h5>Students Life</h5>
                         </div>
                       </div>
                       <div class="gallery-item">
-                        <img src="images/campus-3.png" alt="" />
+                        <img src="images/teacher-7.png" alt="" />
                         <div class="gallery-overlay">
                           <h5>Expert Faculty</h5>
                         </div>
@@ -963,7 +1027,7 @@
       </div>
     </section>
     <section id="feature-program" class="news section">
-      <div class="container title">
+      <div class="container title hide-animation">
         <h2>Recent News</h2>
         <p>
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -1019,7 +1083,7 @@
           <div class="col-xl-6">
             <div class="post-item">
               <div class="post-img">
-                <img src="images/blog-post-1.png" alt="" />
+                <img src="images/blog-post-3.png" alt="" />
               </div>
               <div class="post-content">
                 <a href="" class="post-btn">Design</a>
@@ -1031,7 +1095,7 @@
                 <div class="post-meta">
                   <div class="dp">
                     <img src="images/person-f-12.webp" alt="" />
-                    <span>Lina Chen</span>
+                    <span> Lucas Thompson</span>
                   </div>
                   <span class="date">March 15, 2025</span>
                 </div>
@@ -1041,7 +1105,7 @@
           <div class="col-xl-6">
             <div class="post-item">
               <div class="post-img">
-                <img src="images/blog-post-1.png" alt="" />
+                <img src="images/blog-post-4.png" alt="" />
               </div>
               <div class="post-content">
                 <a href="" class="post-btn">Design</a>
@@ -1064,7 +1128,7 @@
       </div>
     </section>
     <section id="feature-program" class="news section">
-      <div class="container title">
+      <div class="container title hide-animation">
         <h2>Events</h2>
         <p>
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -1320,18 +1384,15 @@
             </div>
           </div>
         </div>
-        <div class="events-navigation pt-5 pb-5 mt-5">
-          <div class="row align-items-center ">
+        <div class="events-navigation pt-5 pb-1 mt-5">
+          <div class="row align-items-center">
             <div class="col-md-8">
               <div class="filter-tabs">
                 <button class="filter-tab">All Events</button>
                 <button class="filter-tab">Academics</button
                 ><button class="filter-tab">Sports</button
-                ><button class="filter-tab">Arts</button> <button
-                  class="filter-tab"
-                >
-                  Community
-                </button>
+                ><button class="filter-tab">Arts</button>
+                <button class="filter-tab">Community</button>
               </div>
             </div>
             <div class="col-md-4 text-end">
@@ -1341,18 +1402,147 @@
         </div>
       </div>
     </section>
+    <footer class="footer position-relative light-background">
+      <div class="container footer">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-main-content">
+            <a href="#" class="sitename"><span>College</span></a>
+            <div class="footer-content pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="social">
+                <strong>Phone:</strong>
+                <span class="number"> +1 5589 55488 55</span>
+              </p>
+              <p>
+                <strong>Email:</strong
+                ><span class="email"> info@example.com</span>
+              </p>
+            </div>
+            <div class="social-links">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <div class="footer-main-links">
+              <h4>Usefull Links</h4>
+              <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Services</li>
+                <li>Term of Policy</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <div class="footer-main-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>Web Desing</li>
+                <li>Web Development</li>
+                <li>Product Management</li>
+                <li>Marketing</li>
+                <li>Graphic Design</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3">
+            <div class="footer-main-links">
+              <h4>Hic solutasetp</h4>
+              <ul>
+                <li>Molestiae accusamus iure</li>
+                <li>Excepturi dignissimos</li>
+                <li>Suscipit distinctio</li>
+                <li>Dilecta</li>
+                <li>Sit quas consectetur</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3">
+            <div class="footer-main-links">
+              <h4>Nobis illum</h4>
+              <ul>
+                <li>Ipsam</li>
+                <li>Laudantium dolorum</li>
+                <li>Dinera</li>
+                <li>Trodelas</li>
+                <li>Flexo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-copy-write text-center">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">MyWebsite</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="last-content">
+          <span> Design by </span
+          ><a href="https://zactonz.com/" target="_blank"
+            >Zactons Technologies</a
+          >
+        </div>
+      </div>
+    </footer>
     <a
       href="#"
       class="scroll-top align-items-center justify-content-center d-flex"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+    <!-- Bootstrap Bundle (includes Popper) -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+
+    <!-- jQuery (if you're using it anywhere else) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- ✅ Swiper JS (from jsDelivr) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000, // 3 seconds
+          disableOnInteraction: false, // keeps autoplay after user interaction
+        },
+        navigation: {
+          nextEl: ".arrow-left",
+          prevEl: ".arrow-right",
+        },
+        breakpoints: {
+          992: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
+          0: { slidesPerView: 1 },
+        },
+      });
+    </script>
+
     <script>
       let header = document.querySelector("header");
+      let awards = document.querySelector("#awards");
+      let country = document.querySelector("#country");
+      let counter = document.querySelector("#counter");
       let scrollTop = document.querySelector(".scroll-top");
       window.addEventListener("scroll", function () {
         if (window.scrollY > 100) {
@@ -1362,12 +1552,76 @@
           header.classList.remove("scrolled");
           scrollTop.classList.remove("show-me");
         }
+        if (window.scrollY > 5400) {
+          let counterNumber = Number(counter.textContent);
+          let awardsNumber = Number(awards.textContent);
+          let countryNumber = Number(country.textContent);
+          if (counterNumber == 87) {
+          } else {
+            let cler = setInterval(() => {
+              counterNumber += 1;
+              // awards.textContent=counterNumber
+              counter.textContent = counterNumber;
+              if (counterNumber == 87) {
+                clearInterval(cler);
+              }
+            }, 16);
+          }
+          if (countryNumber == 65) {
+          } else {
+            let cler = setInterval(() => {
+              countryNumber += 1;
+              // awards.textContent=counterNumber
+              country.textContent = countryNumber;
+              if (countryNumber == 65) {
+                clearInterval(cler);
+              }
+            }, 16);
+          }
+          if (awardsNumber == 250) {
+          } else {
+            let cler = setInterval(() => {
+              awardsNumber += 1;
+              // awards.textContent=counterNumber
+              awards.textContent = awardsNumber;
+              if (awardsNumber == 250) {
+                clearInterval(cler);
+              }
+            }, 1);
+          }
+        }
       });
-      const myCarousel = document.querySelector("#carouselExampleFade");
-      const carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 1000,
-        ride: "carousel",
+
+      let btns = document.querySelectorAll(".filter-tab");
+      console.log(counter.textContent);
+      btns.forEach((el) => {
+        el.addEventListener("click", () => {
+          btns.forEach((el) => {
+            el.classList.remove("active");
+          });
+          el.classList.add("active");
+        });
       });
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show-animation");
+          }
+          console.log(entry);
+        });
+        console.log(entries);
+      });
+      let hide = document.querySelectorAll(".hide-animation");
+      hide.forEach((el) => {
+        observer.observe(el);
+      });
+      AOS.init();
+    </script>
+
+    <script>
+      setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+      }, 1200); // Always waits 2 seconds
     </script>
   </body>
 </html>

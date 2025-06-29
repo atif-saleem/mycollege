@@ -2193,8 +2193,9 @@ font-family: var(--font-primary) ;
   .container .g-5,.container .g-4,.mb-4{
     gap: 0px !important;
   }
-  /* .container{
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  } */
+ .image-bottom {
+  position: absolute;
+  right: 0%;
+  bottom: -5%;
+}
 }

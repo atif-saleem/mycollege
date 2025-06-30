@@ -2057,6 +2057,25 @@ font-family: var(--font-primary) ;
   body{
     overflow-x:hidden !important ;
   }
+  .collapse.show{
+        background: var(--accent-color);
+    color: #fff;
+    height: 100vh;
+  }
+  .collapse.show ul{
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+    .collapse.show ul li{
+    padding: 5px;
+  }
+      .collapse.show ul  li a{
+    color: #fff;
+  }
+   .collapse.show body{
+overflow-y: hidden !important;
+   }
+
   .header-container {
     height: 80px;
   }
